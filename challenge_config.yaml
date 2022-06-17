@@ -47,34 +47,34 @@ leaderboard:
 
 challenge_phases:
     - id: 1
-    name: Test Phase
-    description: templates/challenge_phase_1_description.html
-    leaderboard_public: True
-    is_public: True
-    is_submission_public: True
-    start_date: 2022-06-20 00:00:00
-    end_date: 2099-09-16 23:59:59
-    test_annotation_file: annotations/test_annotations_testsplit.json
-    codename: test
-    max_submissions_per_day: 5
-    max_submissions_per_month: 50
-    max_submissions: 50
-    default_submission_meta_attributes:
-      - name: method_name
-        is_visible: True
-      - name: method_description
-        is_visible: True
-      - name: project_url
-        is_visible: True
-      - name: publication_url
-        is_visible: True
-    submission_meta_attributes:
-      - name: MultipleChoiceAttribute
-        description: Types of input used by the model
-        type: checkbox
-        options: ["RGB", "Depth", "Segmentation", "State"]
-    is_restricted_to_select_one_submission: False
-    is_partial_submission_evaluation_enabled: False
+      name: Test Phase
+      description: templates/challenge_phase_1_description.html
+      leaderboard_public: True
+      is_public: True
+      is_submission_public: True
+      start_date: 2022-06-20 00:00:00
+      end_date: 2099-09-16 23:59:59
+      test_annotation_file: annotations/test_annotations_testsplit.json
+      codename: test
+      max_submissions_per_day: 5
+      max_submissions_per_month: 50
+      max_submissions: 50
+      default_submission_meta_attributes:
+        - name: method_name
+          is_visible: True
+        - name: method_description
+          is_visible: True
+        - name: project_url
+          is_visible: True
+        - name: publication_url
+          is_visible: True
+      submission_meta_attributes:
+        - name: MultipleChoiceAttribute
+          description: Types of input used by the model
+          type: checkbox
+          options: ["RGB", "Depth", "Segmentation", "State"]
+      is_restricted_to_select_one_submission: False
+      is_partial_submission_evaluation_enabled: False
 
 dataset_splits:
   - id: 1
