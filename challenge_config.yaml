@@ -29,15 +29,15 @@ leaderboard:
           "Scenario 2": {
             "sort_ascending": True,
             "description": "Accuracy for trials in Scenario 2",
-          }
+          },
           "Scenario 3": {
             "sort_ascending": True,
             "description": "Accuracy for trials in Scenario 3",
-          }
+          },
           "Scenario 4": {
             "sort_ascending": True,
             "description": "Accuracy for trials in Scenario 4",
-          }
+          },
           "All": {
             "sort_ascending": True,
             "description": "Accuracy for all trials",
@@ -88,4 +88,3 @@ challenge_phase_splits:
     visibility: 3
     leaderboard_decimal_precision: 2
     is_leaderboard_order_descending: True
-    
