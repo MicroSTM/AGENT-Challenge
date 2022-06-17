@@ -1,1 +1,29 @@
-<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+<p>For each trial, a model needs to give a surprising score for a test video based on the corresponding familiarization video(s). Then trials are paired (a trial with the expected test video and a trial with the corresponding surpersing test video), and the pairing is unkown to the model. For a pair of trials, if the model gives a lower surprising score to the expected test video than the surprising test video, we count it as correct. We report the percentage of the pairs where the model gives the correct judgment as the accuracy. Please see the AGENT paper for more details.</p>
+
+<p>In this challenge, we focus on the leave one scenario out evaluation. That is, the model is trained on three out of four scenarios and is tested on the remaining scenario.</p>
+
+<p>We provide the RGB images, depth images, segmentation maps, and the ground-truth states for all videos.</p>
+
+
+<!-- <p>Training data can be downloaded from <a href=https://www.tshu.io/AGENT/>here</a>.</p> -->
+
+<h3>Dataset</h3>
+
+<!-- <h4 align = 'justify'> Coming Soon</h4>  -->
+        <h4 align = 'justify'>Full version (RGB-D frames + segmentation maps + GT states)</h4>
+        <p align = 'justify'>
+        <a href = "https://agent-dataset-storage.s3.us-east.cloud-object-storage.appdomain.cloud/final_dataset_train_validation.zip">Train/Val Set</a> (366.3 GB) 
+        </p>
+        <p align = 'justify'>
+        <a href = "https://agent-dataset-storage.s3.us-east.cloud-object-storage.appdomain.cloud/final_dataset_challenge_dataset.zip">Test Set</a> (147 GB) 
+        </p>
+        <h4 align = 'justify'>Small version (with GT states only)</h4>
+        <p align = 'justify'>
+        <a href = "https://agent-dataset-storage.s3.us-east.cloud-object-storage.appdomain.cloud/train_validation_state_data.zip">Train/Val Set</a> (547 MB) 
+        </p>
+        <p align = 'justify'>
+        <a href = "https://www.tshu.io/AGENT/final_dataset_challenge_dataset_pickle.zip">Test Set</a> (174 MB)
+        </p>
+        <p align = 'justify'>
+        <a href = "https://www.tshu.io/AGENT/Dataset_README.md">README</a> 
+        </p>
