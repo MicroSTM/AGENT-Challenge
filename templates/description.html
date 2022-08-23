@@ -1,5 +1,36 @@
-<img src="https://www.tshu.io/AGENT/icon.gif" alt="icon" class="center">
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+column {
+  float: center;
+  width: 48.00%;
+  padding: 5px;
+  text-align:center;
+}
 
+Clear floats after image containers */
+row::after {
+  content: "";
+  clear: both;
+  display: table;
+  text-align:center;
+}
+</style>
+</head>
+<body>
+<div class="row">
+<div class="column">
+    <p style="text-align:center;">
+<img src="https://www.tshu.io/AGENT/icon.gif" alt="icon" class="center" height=200px>
+<p>
+</div>
+<div class="column">
+    <p style="text-align:center;">
+<img src="https://www.tshu.io/AGENT/intro.png" alt="intro" class="center" height=200px>
+</p>
+</div>
+</div>
 <p>Do machine learning models understand the core concepts of intuitive psychology? We present AGENT (Action, Goal, Efficiency, coNstraint, uTility), an empirically-grounded challenge consisting of a large dataset of procedurally generated 3D animations, which probes key concepts in intuitive psychology. There are 1920 training trials, 480 trials, and 960 trials. For each trial, a model needs to give a surprising score for a test video based on the corresponding familiarization video(s). Test trials are paired (a trial with the expected test video and a trial with the corresponding surpersing test video). For a pair of trials, if the model gives a lower surprising score to the expected test video than the surprising test video, we count it as correct.</p>
 
 <p>BACKGROUND: For machine agents to successfully interact with humans in real-world settings, they will need to develop an understanding of human mental life. Intuitive psychology is the ability to reason about hidden mental variables that drive observable actions, and it comes naturally to people.  Even babies can tell agents and objects apart, and they expect agents to act efficiently to achieve goals given constraints.</p>
@@ -9,3 +40,5 @@
 <p>Website: <a href="https://www.tshu.io/AGENT">https://www.tshu.io/AGENT</a></p>
 
 <p>Paper: <a href="https://www.tshu.io/AGENT/AGENT.pdf">https://www.tshu.io/AGENT/AGENT.pdf</a></p>
+</body>
+</html>
