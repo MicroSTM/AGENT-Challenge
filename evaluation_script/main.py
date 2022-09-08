@@ -90,10 +90,10 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
         output["result"] = [
             {
                 "test_split": {
-                    "Scneario 1": np.mean(acc_1),
-                    "Scneario 2": np.mean(acc_2),
-                    "Scneario 3": np.mean(acc_3),
-                    "Scneario 4": np.mean(acc_4),
+                    "Scenario 1": np.mean(acc_1),
+                    "Scenario 2": np.mean(acc_2),
+                    "Scenario 3": np.mean(acc_3),
+                    "Scenario 4": np.mean(acc_4),
                     "All": np.mean(acc_all),
                 }
             },
